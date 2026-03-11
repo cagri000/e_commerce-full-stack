@@ -1,0 +1,24 @@
+package com.ecommerce.backend.service;
+
+import com.ecommerce.backend.model.Category;
+import com.ecommerce.backend.repository.CategoryRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class CategoryService {
+
+    // Repository'i buraya çağırıyoruz (Dependency Injection)
+    @Autowired
+    private CategoryRepository categoryRepository;
+
+    // Tüm kategorileri getiren metot
+    public List<Category> getAllCategories() {
+        return categoryRepository.findAll();
+    }
+
+
+
+}

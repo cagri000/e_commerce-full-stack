@@ -1,0 +1,4 @@
+spring.datasource.url=jdbc:mysql://localhost:3306/eticaret_veritabanin
+spring.datasource.username=root
+spring.datasource.password=SENIN_SIFREN_BURAYA
+spring.jpa.hibernate.ddl-auto=update

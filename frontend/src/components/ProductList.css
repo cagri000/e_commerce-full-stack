@@ -1,0 +1,80 @@
+/* ProductList.css */
+
+/* 1. Ürünlerin duracağı ana raf (Kapsayıcı) */
+.product-grid {
+    display: grid;
+    /* Otomatik olarak sığdır: Her kolon en az 250px olsun */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px; /* Kartlar arası boşluk */
+    padding: 20px;
+}
+
+/* 2. Tek bir ürün kartının tasarımı */
+.product-card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px; /* Köşeleri yuvarla */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Hafif gölge ver */
+    transition: transform 0.2s; /* Hover efekti için geçiş */
+    text-align: center;
+}
+
+/* Mouse ile üzerine gelince (Hover) */
+.product-card:hover {
+    transform: translateY(-5px); /* Hafifçe yukarı kalksın */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.product-image {
+    max-width: 100%;
+    height: 150px;
+    object-fit: contain; /* Resmi kutuya sığdır */
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #27ae60; /* Yeşil renk */
+    font-size: 1.2rem;
+}
+
+.btn-add {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-add:hover {
+    background-color: #2980b9;
+}
+
+/* ProductList.css'in en altına ekle */
+
+.btn-detail {
+    display: block;           /* Kutu gibi davran */
+    width: 100%;              /* Kartın genişliğini kapla */
+    text-align: center;
+    text-decoration: none;    /* Altındaki çizgiyi kaldır */
+    
+    background-color: transparent; /* İçi boş olsun */
+    color: #3498db;           /* Yazısı mavi */
+    border: 1px solid #3498db; /* Çerçevesi mavi */
+    
+    padding: 8px 0;           /* Daha ince padding (Yükseklik azaldı) */
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;        /* Yazı bir tık küçüldü */
+    font-weight: bold;
+    transition: all 0.3s ease; /* Yumuşak geçiş */
+}
+
+/* Üzerine gelince (Hover) */
+.btn-detail:hover {
+    background-color: #3498db; /* İçi mavi dolsun */
+    color: white;              /* Yazı beyaz olsun */
+}

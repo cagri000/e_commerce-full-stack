@@ -1,0 +1,55 @@
+/* Footer.css */
+.footer {
+    background-color: #2c3e50; /* Navbar ile aynı koyu lacivert */
+    color: #bdc3c7; /* Griye çalan beyaz yazı */
+    padding: 40px 0 0 0;
+    margin-top: 50px; /* İçerikle arasına mesafe koy */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around; /* Yan yana eşit dağıt */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    flex-wrap: wrap; /* Mobilde alt alta geçsin */
+}
+
+.footer-brand h3 {
+    color: #f1c40f; /* Sarı marka rengi */
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #bdc3c7;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    background-color: #1a252f; /* Bir tık daha koyu taban */
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
